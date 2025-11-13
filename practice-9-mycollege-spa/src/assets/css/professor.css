@@ -1,0 +1,101 @@
+/*
+*  styles for professor-related elements
+ */
+/* styles for list of professors */
+.professor-container{
+    margin: 10px auto;
+    width: 100%;
+    border: 0px solid var(--clr-primary-8);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.professor-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.professor-list a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid var(--clr-grey-9);
+    border-bottom: 1px solid var(--clr-grey-9);
+    border-right: 1px dotted var(--clr-grey-9);
+    border-left: 1px dotted var(--clr-grey-9);
+    margin-bottom: -1px;
+    margin-right: 40px;
+    height: 35px;
+}
+
+.professor-list a div {
+    display: inline-block;
+    height: 80%;
+}
+.professor-list a.active,
+.professor-list a:hover {
+    background-color: #e4f1fe;
+}
+
+.professor-list a span {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.professor-list a.active span {
+    background-color: gold;
+}
+
+/* styles for professor details*/
+
+.professor-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.professor-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: left;
+    min-height: 230px;
+}
+
+.professor-info {
+    width: 60%;
+    min-width: 260px;
+    max-width: 460px;
+}
+
+.professor-info div {
+    padding: 3px;
+}
+
+.professor-name {
+    min-width: 250px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    border-bottom: 1px dotted var(--clr-grey-8);
+}
+
+.professor-photo {
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    height: 250px;
+}
+.professor-photo img {
+    width: 150px;
+}
+
+.professor-classes {
+    margin-top: 40px;
+}
